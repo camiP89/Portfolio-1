@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="description" content="Welcome to my portfolio page, where you can view 3 of my projects from my first year as a frontend development student." >
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My Portfolio</title>
+ <script src="https://kit.fontawesome.com/bfed71705b.js" crossorigin="anonymous"></script>
+ <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles/styles.css">
+ <script type="module" src="./scripts/index.mjs"></script>
+</head>
+<body>
+   <header>
+        <div class="mobile-header">
+            <label for="menu-checkbox" class="hamburger-icon" aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        <input type="checkbox" id="menu-checkbox">
+        <nav>
+            <a href="#about">About</a>
+            <p class="nav-p">Portfolio</p>
+            <a class="sub-link" href="#rainydays">RainyDays</a>
+            <a class="sub-link" href="#museum">Community Science Museum</a>
+            <a class="sub-link" href="#cakes">Cakes & Comfort</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+  <main>
+     <div id="carousel" class="carousel-vertical">
+      <div class="sunset-container">
+       <img src="assets/sunset.jpg" alt="Sunset image with reflection of trees and sky in the water." class="sunset">
+      </div>
+      <section class="section" id="about">
+       <h1 class="about-h1">About</h1>
+        <div class="profile-image">
+          <img src="assets/profile-pic.png" alt="A profile image of Camilla" class="profile-img">
+        </div>
+        <p class="hi-p"> Hi, I'm Camilla Pugh</p>
+        <p class="fd-p">Frontend developer - student</p>
+        <p class="about-p">I am studying Frontend Development at Noroff school of technology. This is my portfolio displaying 3 of my school projects from my first year. </p>
+        <p class="check-it-p">Please check it out!</p>
+      </section>
+      <section class="section" id="rainydays">
+       <h1>Portfolio</h1>
+       <h2>Project-1: RainyDays</h2>
+       <div class="portfolio">
+         <h3>Rainydays</h3>
+         <img src="assets/screenshot-rainydays.jpg" alt="RainyDays homepage screenshot." class="project-image">
+         <p class="portfolio-p">RainyDays is an interactive e-commerce website for men’s and women’s jackets, built using JavaScript, HTML, and CSS. It dynamically fetches product data from an API, enabling users to browse the catalog, filter by gender, and manage items in a shopping cart with a smooth, user-friendly interface. </p>
+         <p class="please-p">Please check out the website and GitHub</p>
+         <div class="buttons">
+           <button
+            class="website">Website</button>
+           <button class="github">Github</button>
+          </div>
+       </div>
+      </section>
+      <section class="section" id="museum">
+       <h1>Portfolio</h1>
+       <h2>Project-2: Community Science Museum</h2>
+       <div class="portfolio">
+         <h3>Community Science Museum</h3>
+         <img src="assets/semster-project-1-screenshot.jpg" alt="Community Science Museum homepage screenshot." class="project-image">
+         <p class="portfolio-p">The Community Science Museum website is a fun and educational platform designed for children and families. It highlights interactive exhibits, events, and visitor info in a colorful, easy-to-use layout. The site is fully responsive and accessible, encouraging curiosity and visits to the museum.</p>
+         <p class="please-p">Please check out the website and GitHub</p>
+         <div class="buttons">
+           <button class="website">Website</button>
+           <button class="github">Github</button>
+          </div>
+       </div>
+      </section>
+      <section class="section" id="cakes">
+       <h1>Portfolio</h1>
+       <h2>Project-3: Cakes & Comfort</h2>
+       <div class="portfolio">
+         <h3>Cakes & Comfort</h3>
+         <img src="assets/Screenshot-cakes&comfort.jpg" alt="Cakes & Comfort homepage screenshot." class="project-image">
+         <p class="portfolio-p">Cakes & Comfort is a delightful and interactive blog website where users can explore “Sprinkles’” favorite sweet treat recipes. Visitors can browse a variety of mouth-watering desserts, and by registering, they can create and share their own favorite recipes with the community.</p>
+         <p class="please-p">Please check out the website and GitHub</p>
+          <div class="buttons">
+           <button class="website">Website</button>
+           <button class="github">Github</button>
+          </div>
+       </div>
+      </section>
+      <section class="section" id="contact">
+       <h1>Contact</h1>
+       <div id="form-container">
+
+       </div>
+
+       <p class="email">Email: campug0401@stud.noroff.no</p>
+       <footer>
+        <p class="copyright">Copyright &copy; Camilla Pugh 2025</p> 
+       </footer> 
+      </section>
+     </div>
+  </main>
+</body>
+</html>
