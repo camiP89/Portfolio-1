@@ -4,6 +4,9 @@ export function createCarousel(carouselSelector = '#carousel') {
 
   const sections = carousel.querySelectorAll('.section');
   const sectionArray = Array.from(sections);
+  carousel.style.height = `${sectionArray.length * 100}vh`;
+  carousel.style.position = 'relative';
+
   let currentIndex = 0;
 
   const nav = document.createElement('div');
@@ -56,6 +59,30 @@ export function createCarousel(carouselSelector = '#carousel') {
    currentIndex = index;
    moveToSection(currentIndex);
   });
+
+  let touchStartY = 0;
+  let touchEndY = 0;
+
+  carousel.addEventListener('touchstart', e => {
+   touchStartY = e.changedTouches[0].screenY;
+  });
+
+  carousel.addEventListener('touchend', e => {
+   touchEndY = e.changedTouches[0].screenY;
+   handleSwipe();
+  });
+
+  function handleSwipe() {
+   const swipeThreshold = 50;
+
+   if (touchStartY - touchEndY > swipeThreshold) {
+    currentIndex = (currentIndex + 1) % sectionArray.length;
+    moveToSection(currentIndex);
+   } else if (touchEndY - touchStartY > swipeThreshold) {
+     currentIndex = (currentIndex - 1 + sectionArray.length) % sectionArray.length;
+     moveToSection(currentIndex);
+   }
+ }
   return { moveToSection, sectionArray };
 };
 

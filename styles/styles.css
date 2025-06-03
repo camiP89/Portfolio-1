@@ -21,16 +21,27 @@ body {
     background-color: var(--grey);
 }
 
+.carousel {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 9999;
+}
+
 .carousel-nav {
   position: fixed;
-  bottom: 3%;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: row;
-
   z-index: 1000;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .carousel-indicator {
@@ -52,12 +63,12 @@ body {
   justify-content: space-between;
   padding: 10px;
   height: 100%;
-  border-bottom: solid 3px var(--orange);
+  border-bottom: solid 4px var(--orange);
   background-color: var(--black);
 }
 
 .mobile-header i {
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   color: white;
 }
 
@@ -76,27 +87,27 @@ header {
   left: 0;
   width: 100%;
   z-index: 9999;
-  font-size: 1.5rem;
-  height: 55px;
+  font-size: 1.2rem;
+  height: 45px;
 }
 
 nav {
     position: absolute;
-    background: var(--white);
+    background: var(--grey);
     width: 100%;
     left: 0px;
-    top: 50px;
+    top: 45px;
     z-index: 10;
 }
 
 nav a,
 .nav-p  {
     display: block;
-    font-size: 1.3rem;
-    color: var(--black);
-    border: solid 3px var(--orange);
-    font-weight: 600;
-    padding: 15px 20px;
+    font-size: 1.2rem;
+    color: var(--white);
+    border: solid 2px var(--orange);
+    font-weight: bold;
+    padding: 10px 20px;
     text-decoration: none;
     box-sizing: border-box;
     margin: 0;
@@ -104,7 +115,8 @@ nav a,
 
 nav a.sub-link {
   padding-left: 30px;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 nav a.sub-link:before {
@@ -122,43 +134,37 @@ nav a:checked {
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--white);
   font-weight: 700;
   font-style: normal;
   line-height: normal;
-  margin: 15px 20px;
   background-color: var(--orange);
   padding: 5px 10px;
 }
 
 h2 {
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 700;
-  color: var(--white);
-  margin: 0 30px;
-}
-
-h3 {
   font-size: 1rem;
   font-weight: 800;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  margin: 20px;
 }
 
 .about-h1 {
   position: relative;
-  top: 40%;;
-  margin-bottom: 40px;
+  top: 40%;
+  margin-bottom: 10px;
   width: 30%;
 }
 
 .sunset-container {
   position: relative;
   width: 100%;
-  padding-top: 55px;
+  height: calc(100vh - 45px);
+  overflow: hidden;
+  padding-top: 45px;
 }
 
 .sunset {
@@ -190,19 +196,19 @@ h3 {
 
 #about .hi-p {
   position: relative;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: var(--white);
   top: 40%;
-  margin: 20px 0 40px 20px;
+  margin: 10px 0 30px 0;
 }
 
 #about .fd-p {
   position: relative;
   top: 35%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--orange);
   font-weight: 700;
-  margin: 20px 0 40px 20px;
+  margin: 10px 0 30px 0;
 }
 
 #about .about-p {
@@ -211,7 +217,7 @@ h3 {
   font-size: 1rem;
   color: var(--white);
   font-weight: 300;
-  margin: 20px 20px 10px 20px;
+  margin: 10px 0 20px 0;
 }
 
 #about .check-it-p {
@@ -220,39 +226,24 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--orange);
 }
 
-.container {
-  height: 100%;
-  width: 100%;
-  transition: transform 0.6s ease-in-out;
-}
-
 .section {
+  position: absolute;
   height: calc(100vh - 55px);
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 55px;
-}
-
-.carousel {
-  position: fixed;
-  top: 50%;
-  right: 1rem;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  z-index: 9999;
+  padding: 40px 20px 0 20px;
 }
 
 .portfolio {
+  max-width: 890px;
   background-color: var(--white);
-  margin: 20px 20px;
+  margin: 0 auto;
   border: solid 5px var(--orange);
 }
 
@@ -262,22 +253,24 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 20px;
-  width: calc(100% - 40px);
+  margin: 10px 30px;
+  width: calc(100% - 60px);
   border: solid 3px var(--orange);
 }
 
 .portfolio-p {
   font-size: 0.9rem;
-  padding: 10px 20px;
-  margin: 0;
+  padding: 0 30px;
+  margin: 20px 0;
 }
 
 .please-p {
   font-size: 0.9rem;
   font-weight: bold;
   text-align: center;
-  margin: 0;
+  margin: 10px;
+  padding: 5px 20px;
+
 }
 
 .buttons {
@@ -291,6 +284,7 @@ h3 {
 .website,
 .github, 
 .contact-form button {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 90px;
@@ -309,18 +303,25 @@ h3 {
   margin: 10px;
 }
 
+.contact-form button {
+  width: 100%;
+  margin: 0;
+  }
+
 .contact-container {
   padding: 20px;
   background-color: var(--white);
   border: solid 5px var(--orange);
-  max-width: 600px;
-  margin: 20px;
+  max-width: 890px;
+  margin: 10px auto 30px auto;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.2rem;
+  max-width: 700px;
+  margin: 20px auto;
 }
 
 .contact-form input,
@@ -335,18 +336,161 @@ h3 {
 .email {
   font-size: 1rem;
   color: var(--white);
-  margin-left: 20px;
+  margin: 10px auto 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright {
   font-size: 0.9rem;
-  margin: 20px;
+  margin: 0 20px;
   color: var(--orange);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+@media (min-width: 420px) {
+ .about-h1 {
+  top: 45%;;
+  margin-bottom: 10px;
+  width: 30%;
+  }
 
+ #about .profile-img {
+  top: 35%;
+ }
 
+ #about .hi-p {
+  top: 45%;
+  margin: 10px 0 30px 0;
+ }
 
+ #about .fd-p {
+  top: 40%;
+  margin: 10px 0 30px 0;
+ }
+
+ #about .about-p {
+  top: 35%;
+  margin: 10px 0 30px 0;
+ }
+
+ #about .check-it-p {
+  top: 31%;
+  margin: 10px 0 30px 0;
+ }
+
+ .section {
+  padding: 40px 30px 0 30px;
+ }
+}
+
+@media (min-width: 540px) {
+.about-h1 {
+  top: 0;
+  width: 100%;
+  margin: 20px;
+  width: calc(100% - 40px);
+ }
+
+ #about .profile-img {
+  top: 20%;
+  left: 80px;
+  margin: 0;
+ }
+
+ #about .hi-p {
+  top: 30%;
+  background-color: var(--black);
+  width: 210px;
+  margin: 10px 0 20px 10px;
+  border: solid 2px var(--orange);
+  padding: 10px;
+ }
+
+ #about .fd-p {
+  top: 30%;
+  background-color: var(--black);
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0 20px 10px;
+  border: solid 2px var(--orange);
+ }
+
+ #about .about-p {
+  top: 30%;
+  margin: 10px 0 20px 10px;
+  background-color: var(--black);
+  border: solid 2px var(--orange);
+  width: 390px;
+  padding: 10px;
+ }
+
+ #about .check-it-p {
+  top: 30%;
+  color: var(--white);
+  font-size: 1.3rem;
+ }
+}
+
+@media (min-width: 915px) {
+  #menu-checkbox,
+  .hamburger-icon, 
+  .mobile-header {
+    display: none;
+  }
+      
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--black);
+    padding: 10px 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  nav a,
+  .nav-p  {
+    display: inline-block;
+    color: var(--white);
+    padding: 0 15px;
+    font-size: 0.9rem;
+    border: none;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    text-decoration: underline;
+  }
+
+  nav a i {
+    font-size: 0.9rem;
+    margin-left: 5px;
+  }
+
+  nav a.sub-link {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .section {
+    padding: 40px 50px 0 50px;
+  }
+
+  .carousel-nav {
+    gap: 2.5rem;
+  }
+
+  .carousel-indicator.current-slide {
+    background-color: var(--orange);
+  }
+}
