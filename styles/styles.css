@@ -313,7 +313,7 @@ h2 {
   background-color: var(--white);
   border: solid 5px var(--orange);
   max-width: 890px;
-  margin: 10px auto 30px auto;
+  margin: 10px auto 20px auto;
 }
 
 .contact-form {
@@ -336,7 +336,7 @@ h2 {
 .email {
   font-size: 1rem;
   color: var(--white);
-  margin: 10px auto 40px auto;
+  margin: 10px auto 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,7 +344,7 @@ h2 {
 
 .copyright {
   font-size: 0.9rem;
-  margin: 0 20px;
+  margin: 0 10px;
   color: var(--orange);
   display: flex;
   justify-content: center;
