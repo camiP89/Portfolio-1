@@ -72,6 +72,11 @@ export function createCarousel(carouselSelector = '#carousel') {
    handleSwipe();
   });
 
+  document.addEventListener('click', () => {
+   currentIndex = (currentIndex + 1) % sectionArray.length;
+   moveToSection(currentIndex);
+  });
+
   function handleSwipe() {
    const swipeThreshold = 50;
 
