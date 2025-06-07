@@ -1,13 +1,13 @@
 # Portfolio-1
 
-![A screenshot of the homepage of my portfolio-1 project](/assets/Screenshot2025-06-04211316-portfolio.jpg)
+![A screenshot of the homepage of my portfolio-1 project](assets/Screenshot2025-06-07122309about.jpg)
 
 
-## The Portfolio 1 assignment is a single-page portfolio website showcasing three of my projects from the Frontend Development programme:
+### The Portfolio 1 assignment is a single-page portfolio website showcasing three of my projects from the Frontend Development programme:
 
 # Description:
 
-### This repository contains the Portfolio 1 assignment for the Frontend Development course. I have turned it into a full-page vertical carousel implemented using vanilla JavaScript, HTML and CSS. The first slide is an about me, then the following three slides are the projects and finally a contact slide. It allows navigation through multiple sections of content using scroll, keyboard arrows, touch gestures and even click interactions. 
+ This repository contains the Portfolio 1 assignment for the Frontend Development course. I have turned it into a full-page vertical carousel implemented using vanilla JavaScript, HTML and CSS. The first slide is an about me, then the following three slides are the projects and finally a contact slide. It allows navigation through multiple sections of content using scroll, keyboard arrows, touch gestures and even click interactions. 
 
 ## The three projects:
 
