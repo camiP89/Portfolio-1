@@ -2,8 +2,7 @@
 
 ![A screenshot of the homepage of my portfolio-1 project](assets/Screenshot2025-06-07122309about.jpg)
 
-
-### The Portfolio 1 assignment is a single-page portfolio website showcasing three of my projects from the Frontend Development programme:
+The Portfolio 1 assignment is a single-page portfolio website showcasing three of my projects from the Frontend Development programme:
 
 # Description:
 
