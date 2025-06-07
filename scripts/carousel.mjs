@@ -75,7 +75,7 @@ export function createCarousel(carouselSelector = '#carousel') {
   const main = document.querySelector('main');
 
   main.addEventListener('click', (e) => {
-   if (e.target.closest('a') || e.target.closet('button')) return;
+   if (e.target.closest('a') || e.target.closest('button')) return;
 
    currentIndex = (currentIndex + 1) % sectionArray.length;
    moveToSection(currentIndex);
