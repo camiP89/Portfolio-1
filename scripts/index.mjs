@@ -1,7 +1,9 @@
 import { createCarousel } from "./carousel.mjs";
 import { createContactForm } from "./contact.mjs";
+import { createHeader } from "./header.mjs";
 
 document.addEventListener('DOMContentLoaded', () => {
+  createHeader();
   const { moveToSection, sectionArray } = createCarousel('#carousel');
   createContactForm();
 
@@ -14,6 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
      if (targetIndex !== -1) {
        moveToSection(targetIndex);
+      }
+
+      const menuCheckbox = document.getElementById("menu-checkbox");
+      if (menuCheckbox && menuCheckbox.checked) {
+       menuCheckbox.checked = false;
       }
     });
   });

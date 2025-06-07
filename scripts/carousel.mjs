@@ -72,7 +72,11 @@ export function createCarousel(carouselSelector = '#carousel') {
    handleSwipe();
   });
 
-  document.addEventListener('click', () => {
+  const main = document.querySelector('main');
+
+  main.addEventListener('click', (e) => {
+   if (e.target.closest('a') || e.target.closet('button')) return;
+
    currentIndex = (currentIndex + 1) % sectionArray.length;
    moveToSection(currentIndex);
   });
