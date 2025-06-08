@@ -255,7 +255,7 @@ h2 {
 .portfolio-p {
   font-size: 0.9rem;
   padding: 0 30px;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   font-family: "Recursive", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -346,9 +346,9 @@ h2 {
 }
 
 .copyright {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 0 10px;
-  color: var(--orange);
+  color: var(--red);
 }
 
 @media (min-width: 420px) {
@@ -574,10 +574,16 @@ h2 {
 
   .about-content {
     border: solid 10px var(--red);
-    padding: 30px;
+    padding: 15px;
   }
 
    .contact-container {
     margin: 20px 250px;
  }
+}
+
+@media (min-width: 1400px) {
+  .about-content {
+    padding: 20px;
+  }
 }
